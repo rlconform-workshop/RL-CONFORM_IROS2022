@@ -42,10 +42,12 @@
 }
 
 .card-text {
-	font-size: 12px;
+	font-size: 75%;
+	white-space: initial;
 }
 .card-title {
-	font-size: 14px;
+	font-size: 85%;
+	white-space: initial;
 }
 .card-text a {
 	color:  #6d04aa;

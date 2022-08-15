@@ -12,6 +12,9 @@
 #four a:hover{
 	color: #ffd381;
 }
+#four p {
+	text-align: justify;
+}
 .btn-link {
 	background-color: #d78f06;
 }

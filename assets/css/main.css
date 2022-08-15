@@ -136,6 +136,16 @@ input, select, textarea {
 
 	}
 
+	@media screen and (min-width: 1024px) {
+    width: 100px;
+    height: 100px;
+	}
+	@media screen and (width: 768px) and (height: 1004px) {
+    width: 50px;
+    height: 50px;
+
+	}
+
 	html {
 		box-sizing: border-box;
 	}

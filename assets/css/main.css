@@ -3856,6 +3856,7 @@ input, select, textarea {
 				background: #3c2c62;
 			}
 
+			
 			#sidebar nav a:after {
 				background-image: -moz-linear-gradient(to right, #4256a6, #4e90b7);
 				background-image: -webkit-linear-gradient(to right, #4256a6, #4e90b7);
@@ -4051,3 +4052,33 @@ ul{
 #schedule_tab a{
 color: #55558f;
 }
+
+
+#sidebar button, .dropdown-content {
+  padding: 4px 0px 0px 13px;
+  display: inline-block;
+  border: none !important;
+  background: none !important;
+  outline: none;
+}
+
+#sidebar button, .dropdown-content .active {
+  padding: 4px 0px 0px 13px;
+  display: inline-block;
+  border: none !important;
+  background: none !important;
+  outline: none;
+  color: white;
+}
+
+.dropdown-container {
+  display: none;
+  color: pink !important;
+}
+
+.fa-caret-down {
+  float: right;
+  padding-top: 4px;
+}
+
+

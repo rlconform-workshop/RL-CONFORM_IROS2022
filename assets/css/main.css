@@ -3886,7 +3886,7 @@ input, select, textarea {
 			border: 0;
 			color: rgba(255, 255, 255, 0.5);
 			display: block;
-			font-size: 0.6em;
+			font-size: 0.7em;
 			font-weight: bold;
 			letter-spacing: 0.25em;
 			line-height: 1.75;
@@ -4115,6 +4115,7 @@ color: #55558f;
   border: none !important;
   background: none !important;
   outline: none;
+  font-size: 0.7em;
 }
 
 #sidebar button, .dropdown-content .active {
@@ -4131,7 +4132,7 @@ color: #55558f;
   color: pink !important;
 }
 #sidebar .dropdown-container a{
-	font-size: 0.5em;
+	font-size: 0.6em;
 	color: rgba(174, 142, 255, 0.6);
 }
 .fa-caret-down {

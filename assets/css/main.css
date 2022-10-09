@@ -2609,8 +2609,9 @@ input, select, textarea {
 
 			.wrapper{
 				padding-top: 50px;
-				width: 100%;
+				width: 90%;
 			}
+
 
 				.wrapper.style1 .icon.major:before {
 					color: #5e42a6;
@@ -3365,7 +3366,7 @@ input, select, textarea {
 		}
 
 		.wrapper.style3 {
-			background-color: #e9cbcb;
+			background-color: #ced3e9;
 
 		}
 		.wrapper.style3 h2, h3, a {

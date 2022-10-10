@@ -204,3 +204,19 @@ for (i = 0; i < dropdown.length; i++) {
     }
   });
 }
+$(document).ready(function() {
+  // Show hide popover
+  $(".dropdown-content").click(function() {
+    $(this).find(".dropdown-container").slideToggle("fast");
+  });
+});
+
+$(".dropdown-container").click(function() {
+      $(".dropdown-container").slideUp("slow");
+    });
+// $(document).on("click", function(event) {
+//   var $trigger = $(".dropdown-container");
+//   if ($trigger !== event.target && !$trigger.has(event.target).length) {
+//     $(".dropdown-container").slideUp("slow");
+//   }
+// });

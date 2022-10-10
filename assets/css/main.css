@@ -25,7 +25,8 @@
 }
 .card-group {
 	margin: 10px;
-/*	width:  80%;*/
+	width: 100%; /*80%;*/
+	min-width: 30vw;
 }
 .card-img-top {
 	min-width: 9vw;
@@ -65,7 +66,7 @@
 }
 
 #headshot {
-	margin: 16px 0px 30px 60px;
+	margin: 1.1vw 5vw 1vw 5vw;
 }
 
 html, body, div, span, applet, object,
@@ -244,6 +245,7 @@ input, select, textarea {
 
 	p {
 		margin: 0 0 2em 0;
+
 	}
 
 	h1, h2, h3, h4, h5, h6 {
@@ -309,15 +311,15 @@ input, select, textarea {
 	@media screen and (max-width: 736px) {
 
 		h1 {
-			font-size: 2em;
+			font-size: 3vw;
 		}
 
 		h2 {
-			font-size: 1.25em;
+			font-size: 2vw;
 		}
 
 		h3 {
-			font-size: 1em;
+			font-size: 1.8vw;
 		}
 
 		h4 {
@@ -2714,7 +2716,7 @@ input, select, textarea {
 		ol li {
 			padding-left: 0.25em;
 			max-width: 90%;
-
+			font-size: 1.5vw;
 		}
 
 	ul {
@@ -3259,11 +3261,12 @@ input, select, textarea {
 		table td {
 			padding: 0.75em 0.75em;
 			color: rgb(117, 26, 117);
+			font-size: 1.5vw;
 		}
 
 		table th {
 			color: rgb(117, 26, 117);/*#ffffff;*/
-			font-size: 1em;
+			font-size: 	1.5vw; /*1em;*/
 			font-weight: bold;
 			padding: 0 0.75em 0.75em 0.75em;
 			text-align: left;
@@ -3353,6 +3356,7 @@ input, select, textarea {
 		.wrapper.style1 {
 			background-color: #fdfaff; /*#5e82bb;*/
 			color: #545454;
+			font-size: 1.5vw;
 		}
 
 		.wrapper.style1 h3 {
@@ -3360,6 +3364,7 @@ input, select, textarea {
 		}
 		.wrapper.style1 a{
 			color:  rgb(247, 154, 119) !important;
+
 		}
 		.wrapper.style1-alt {
 			background-color: #e3e8ff !important;
@@ -3964,10 +3969,14 @@ input, select, textarea {
 				overflow: hidden;
 				padding: 16px;
 				text-align: center;
-				top: 0;
+				top: -80px;
 				width: 100%;
 				min-width: 10em;
 				background-color: transparent;
+				transition: 0.3s;
+			}
+			#sidebar:hover{
+				top: 0;
 			}
 
 				#sidebar > .inner {
@@ -3993,20 +4002,17 @@ input, select, textarea {
 					/*overflow: hidden;*/
 
 				}
+
 	
 					#sidebar nav .dropdown {
-				/*		  position: relative;
-						  display: block;*/
-
 						  float:  left !important;
-						  /*overflow: hidden !important;*/
 						}
 					
 
-					.dropdown-content .active {
+					/*.dropdown-content .hover {
 						display: block;
 
-					}
+					}*/
 
 
 					.dropdown-container {
@@ -4018,9 +4024,7 @@ input, select, textarea {
 						  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 						  z-index: 1;
 
-
 						}
-
 
 					#sidebar nav ul {
 						display: -moz-flex;
@@ -4048,6 +4052,7 @@ input, select, textarea {
 					    margin-right: 10px;
 
 					  }
+					
 
 					#sidebar .dropdown-container a{
 					 	float: none;
@@ -4068,10 +4073,15 @@ input, select, textarea {
 					    padding-top: 10px;
 					  }
 
-						#sidebar nav a:after {
+						#sidebar nav a:after{
 							background-image: none;
 							background-color: #b74e91;
 						}
+
+						#sidebar nav button:active .dropdown-container{
+							display: hide;
+						}
+						
 
 		}
 
@@ -4121,7 +4131,7 @@ input, select, textarea {
 			@media screen and (max-width: 736px) {
 
 				#intro p {
-					font-size: 1em;
+					font-size: 1.5vw; /*1em;*/
 				}
 
 			}

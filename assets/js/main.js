@@ -214,6 +214,17 @@ $(document).ready(function() {
 $(".dropdown-container").click(function() {
       $(".dropdown-container").slideUp("slow");
     });
+
+
+$(".scrolly").click(function() {
+  const box = document.getElementById('nav-inner');
+  console.log(box);
+  if (box.contains(event.target)) {
+    $(".dropdown-container").slideUp("slow");
+
+  }
+});
+
 // $(document).on("click", function(event) {
 //   var $trigger = $(".dropdown-container");
 //   if ($trigger !== event.target && !$trigger.has(event.target).length) {

@@ -26,25 +26,21 @@
 .card-group {
 	margin: 10px;
 	width: 100%; /*80%;*/
+	padding:  0em 6em 0em 0em;
+	min-width: 100%;
+	max-width: 100%;
 }
 .card-img-top {
-	min-width: 9vw;
 	max-width: 100%;
-	min-height:  9vw;
 	max-height: 100vh;
     object-fit: cover;
 }
+@media screen and (max-width: 1024px) {
 .card {
-	border-color: #dddddd; /*#6d04aa;*/
-	border-width: .2vh;
-	margin: 3px;
-	min-width: 20%;
-/*	min-width: 5vw;
-	max-width: 12vw;
-	min-height: 5vh;
-	max-height:  40vh;*/
-
+	min-width: 50%;
 }
+}
+
 
 .card-text {
 	font-size: 75%;
@@ -2609,7 +2605,8 @@ input, select, textarea {
 			}
 
 			.wrapper{
-				padding-top: 50px;
+				/*padding-top: 50px;*/
+				padding:  8em 0em 5em 5em;
 				width: 90%;
 			}
 
@@ -2715,7 +2712,7 @@ input, select, textarea {
 		ol li {
 			padding-left: 0.25em;
 			max-width: 90%;
-			font-size: 1.5vw;
+			font-size: 1.1em;
 		}
 
 	ul {
@@ -3260,12 +3257,12 @@ input, select, textarea {
 		table td {
 			padding: 0.75em 0.75em;
 			color: rgb(117, 26, 117);
-			font-size: 1.5vw;
+			font-size: 0.9em;
 		}
 
 		table th {
 			color: rgb(117, 26, 117);/*#ffffff;*/
-			font-size: 	1.5vw; /*1em;*/
+			font-size: 	1em;
 			font-weight: bold;
 			padding: 0 0.75em 0.75em 0.75em;
 			text-align: left;
@@ -3320,7 +3317,7 @@ input, select, textarea {
 
 		.wrapper > .inner {
 			/*padding: 5em 5em 3em 9em ;*/
-			padding: 1em 1em 1em 1em;
+			/*padding: 1em 1em 1em 1em;*/
 			max-width: 100%;
 			width: 75em;
 		}
@@ -3328,7 +3325,8 @@ input, select, textarea {
 			@media screen and (max-width: 1680px) {
 
 				.wrapper > .inner {
-					padding: 4em 4em 2em 4em ;
+					/*padding: 4em 4em 2em 4em ;*/
+					size:  100%;
 				}
 
 			}
@@ -3344,7 +3342,8 @@ input, select, textarea {
 			@media screen and (max-width: 736px) {
 
 				.wrapper > .inner {
-					padding: 3em 2em 1em 2em ;
+					size:  100%;
+					/*padding: 3em 2em 1em 2em ;*/
 				}
 
 			}
@@ -3356,7 +3355,7 @@ input, select, textarea {
 		.wrapper.style1 {
 			background-color: #fdfaff; /*#5e82bb;*/
 			color: #545454;
-			font-size: 1.5vw;
+			font-size: 0.9em;
 		}
 
 		.wrapper.style1 h3 {
@@ -3689,7 +3688,7 @@ input, select, textarea {
 		overflow-x: hidden;
 		overflow-y: auto;
 		position: fixed;
-		font-size: 1.2vw;
+		font-size: font-size: clamp(16px, 4vw, 22px);
 		text-align: right;
 		top: 0;
 		width: 16em;
@@ -3988,7 +3987,7 @@ input, select, textarea {
 					-webkit-align-items: -webkit-stretch;
 					-ms-align-items: -ms-stretch;
 					align-items: stretch;
-					height: inherit;
+					height: 6vw;
 					line-height: inherit;
 				}
 
@@ -3996,8 +3995,8 @@ input, select, textarea {
 				#sidebar nav {
 					width:  90%;
 					background-color: #312450;
-
 					height: 6vw;
+					min-height: 33px;
 					/*line-height*/
 					/*overflow: hidden;*/
 
@@ -4047,7 +4046,7 @@ input, select, textarea {
 
 					    text-align: center;
 					    float: left;
-					    font-size:  1.1vw;
+					    font-size: 0.6em;
 					    /*padding:  0px 10px 0px 0px;*/
 					    margin-right: 10px;
 
@@ -4060,14 +4059,13 @@ input, select, textarea {
 						text-decoration: none;
 						display: block;
 						text-align: left;
-						font-size: 1vw !important;
+						font-size: 0.6em;
 
 					 }
 					 #sidebar nav a {
 					    text-align: center;
 					    float: left;
-					    font-size: 1.1vw;
-					    /*padding:  8px 10px 0px 0px;*/
+					    font-size: 0.6em;
 					    margin-right: 1vw; 
 					    margin-left: 1vw;
 					    padding-top: 10px;
@@ -4085,13 +4083,22 @@ input, select, textarea {
 
 		}
 
-		/*@media screen and (max-width: 736px) {
+		@media screen and (max-width: 1238px) {
 
-			#sidebar {
-				display: none;
-			}
+				#sidebar nav button, #sidebar nav a, #sidebar .dropdown-container a{
+					    font-size: 1vw;
 
-		}*/
+					  }
+
+		}
+
+		@media screen and (max-width: 798px) {
+			#sidebar nav button, #sidebar nav a, #sidebar .dropdown-container a{
+					    font-size: 1vw;
+
+					  }
+
+		}
 
 		  
 	
@@ -4131,7 +4138,7 @@ input, select, textarea {
 			@media screen and (max-width: 736px) {
 
 				#intro p {
-					font-size: 1.5vw; /*1em;*/
+					font-size: .9em;
 				}
 
 			}
@@ -4205,7 +4212,7 @@ color: #55558f;
   border: none !important;
   background: none !important;
   outline: none;
-  font-size: 0.7em;
+  font-size: 0.6em;
 }
 
 #sidebar button, .dropdown-content .active {
@@ -4222,7 +4229,7 @@ color: #55558f;
   color: pink !important;
 }
 #sidebar .dropdown-container a{
-	font-size: 0.6em;
+	font-size: 0.5em;
 	color: rgba(174, 142, 255, 0.6);
 }
 .fa-caret-down {

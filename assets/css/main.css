@@ -2606,8 +2606,8 @@ input, select, textarea {
 
 			.wrapper{
 				/*padding-top: 50px;*/
-				padding:  8em 0em 5em 5em;
-				width: 90%;
+				padding: 6vw 3vw 3vw 6vw; /* 8em 0em 5em 5em;*/
+				width: 100%;
 			}
 
 

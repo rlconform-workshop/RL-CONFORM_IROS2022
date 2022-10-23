@@ -3612,7 +3612,7 @@ input, select, textarea {
 /* Wrapper (main) */
 
 	#sidebar + #wrapper {
-		margin-left: 15em;
+		margin-left: 10em;
 	}
 
 		@media screen and (max-width: 1280px) {
@@ -3962,7 +3962,7 @@ input, select, textarea {
 		@media screen and (max-width: 1280px) {
 
 			#sidebar {
-				height: 40em;
+				height: 19em;
 				left: 0;
 				line-height: 3.5em;
 				overflow: hidden;

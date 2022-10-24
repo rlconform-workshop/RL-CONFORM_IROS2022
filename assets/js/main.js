@@ -187,43 +187,53 @@
 				}
 			});
 
+			//* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+			var dropdown = document.getElementsByClassName("dropdown-content");
+			var i;
+			var sidebar = document.getElementById("sidebar");
+			var sidebar_contact = this.nextElementSibling;
+
+			for (i = 0; i < dropdown.length; i++) {
+			  dropdown[i].addEventListener("click", function() {
+			    this.classList.toggle("active");
+			    var dropdownContent = this.nextElementSibling;
+			    if (dropdownContent.style.display === "block") {
+			      dropdownContent.style.display = "none";
+			      sidebar.style.height = "8em";
+			      sidebar_contact.style.height = "8em";
+			      
+			    } else {
+			      dropdownContent.style.display = "block";
+			      sidebar.style.height = "20em";
+			      sidebar_contact.style.height = "20em";
+
+			    }
+			  });
+			}
+			$(document).ready(function() {
+			  // Show hide popover
+			  $(".dropdown-content").click(function() {
+			    $(this).find(".dropdown-container").slideToggle("fast");
+			  });
+			});
+
+			$(".dropdown-container").click(function() {
+			      $(".dropdown-container").slideUp("slow");
+			    });
+
+
+			$(".scrolly").click(function() {
+			  const box = document.getElementById('nav-inner');
+			  console.log(box);
+			  if (box.contains(event.target)) {
+			    $(".dropdown-container").slideUp("slow");
+
+			  }
+			});
+
 })(jQuery);
 
-//* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
-var dropdown = document.getElementsByClassName("dropdown-content");
-var i;
 
-for (i = 0; i < dropdown.length; i++) {
-  dropdown[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var dropdownContent = this.nextElementSibling;
-    if (dropdownContent.style.display === "block") {
-      dropdownContent.style.display = "none";
-    } else {
-      dropdownContent.style.display = "block";
-    }
-  });
-}
-$(document).ready(function() {
-  // Show hide popover
-  $(".dropdown-content").click(function() {
-    $(this).find(".dropdown-container").slideToggle("fast");
-  });
-});
-
-$(".dropdown-container").click(function() {
-      $(".dropdown-container").slideUp("slow");
-    });
-
-
-$(".scrolly").click(function() {
-  const box = document.getElementById('nav-inner');
-  console.log(box);
-  if (box.contains(event.target)) {
-    $(".dropdown-container").slideUp("slow");
-
-  }
-});
 
 // $(document).on("click", function(event) {
 //   var $trigger = $(".dropdown-container");
